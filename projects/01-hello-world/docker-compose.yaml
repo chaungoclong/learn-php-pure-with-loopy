@@ -1,0 +1,9 @@
+services:
+  php:
+    container_name: 01-hello-world
+    image: php:8.4-cli-alpine
+    volumes:
+      - ./:/app
+    working_dir: /app
+    tty: true
+    stdin_open: true
